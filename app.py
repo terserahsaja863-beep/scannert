@@ -2,10 +2,15 @@ import sys
 import os
 import streamlit as st
 
+
+
+import streamlit as st
 sys.path.append(os.path.dirname(__file__))
 
-from src.state import configure_logging, initialize_session_state
-from src.ui import configure_page, info_card, metric_card, render_header, render_sidebar
+st.set_page_config(page_title="Pro Scanner", layout="wide")
+
+st.title("📄 Pro Smart Document Scanner")
+st.write("Scanner + Enhancement + Download + History 🚀")
 
 
 configure_logging()

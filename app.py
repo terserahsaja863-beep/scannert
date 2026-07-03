@@ -1,4 +1,8 @@
+import sys
+import os
 import streamlit as st
+
+sys.path.append(os.path.dirname(__file__))
 
 from src.state import configure_logging, initialize_session_state
 from src.ui import configure_page, info_card, metric_card, render_header, render_sidebar
